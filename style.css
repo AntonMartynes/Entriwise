@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.1);
+
+  background-color: #365B7B;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.header__list a {
+  color: aliceblue;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 30px;
+  
+}
+
+.main__content {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #A0D4C6;
+  transition: all 1s ease-in-out;
+}
+
+.main__content:hover {
+  animation: shake 0.5s;
+
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
